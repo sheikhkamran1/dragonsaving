@@ -14,7 +14,7 @@
             data-feather="briefcase"></i><span>Master</span></a>
         <ul class="dropdown-menu">
           <li><a class="nav-link" href="{{ route('menu.index') }}">Menu</a></li>
-          <li><a class="nav-link" href="widget-data.html">Data Widgets</a></li>
+          <li><a class="nav-link" href="{{  route('page.index')  }}">Page</a></li>
         </ul>
       </li>
       <li class="dropdown">

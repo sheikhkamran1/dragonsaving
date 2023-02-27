@@ -14,7 +14,7 @@
 
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="name">Name of the Menu <span class="text-danger">*</span></label>
+                                    <label for="name">Name Of The Menu <span class="text-danger">*</span></label>
                                     <input id="name" class="form-control" type="text" name="name" value="{{ old('name') }}">
                                 </div>
                             </div>
