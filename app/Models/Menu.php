@@ -9,7 +9,11 @@ class Menu extends Model
 {
     use HasFactory;
 
-    public function pages(){
-        return $this->hasMany(Page::class);
+    public function posts(){
+        return $this->hasMany(Post::class);
+    }
+
+    public function schemes(){
+        return $this->hasMany(Scheme::class);
     }
 }

@@ -10,6 +10,7 @@
   <title>Otika - Admin Dashboard Template</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="/assets/css/app.min.css">
+  <link href="/assets/bundles/lightgallery/dist/css/lightgallery.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/bundles/summernote/summernote-bs4.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="/assets/css/style.css">
@@ -202,8 +203,10 @@
   <script src="/assets/js/app.min.js"></script>
   <script src="/assets/bundles/summernote/summernote-bs4.js"></script>
   <!-- JS Libraies -->
+  <script src="/assets/bundles/lightgallery/dist/js/lightgallery-all.js"></script>
   <script src="/assets/bundles/apexcharts/apexcharts.min.js"></script>
   <!-- Page Specific JS File -->
+  <script src="/assets/js/page/light-gallery.js"></script>
   <script src="/assets/js/page/index.js"></script>
   <!-- Template JS File -->
   <script src="/assets/js/scripts.js"></script>

@@ -12,22 +12,22 @@
                             <tr>
                                 <th>SN</th>
                                 <th>Name</th>
-                                <th>Position</th>
+                                <th>Menu Order</th>
                                 <th>Url</th>
                                 <th>Action</th>
                             </tr>
                             @foreach ($menu as $item)
                                 <tr>
-                                    <td>{{ $item->id }}</td>
-                                    <td>{{ $item->name }}</td>
-                                    <td>{{ $item->position }}</td>
-                                    <td>{{ $item->url ? $item->url  : 'You Have No Link'}}</td>
-                                    <td>
+                                    <td class="border border-1">{{ $item->id }}</td>
+                                    <td class="border border-1">{{ $item->name }}</td>
+                                    <td class="border border-1">{{ $item->menu_order }}</td>
+                                    <td class="border border-1 w-75">{{ $item->url ? $item->url  : 'You Have No Link'}}</td>
+                                    <td class="border border-1 w-25">
                                         <form action="{{ route('menu.destroy',$item->id) }}" method="post">
                                             @csrf
                                             @method('delete')
-                                        <a href="{{ route('menu.edit',$item->id) }}" class="badge badge-primary">Edit</a>
-                                            <button type="submit" class="badge btn bg-danger text-light">Delete</button>
+                                        <a href="{{ route('menu.edit',$item->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                                            <button type="submit" class="btn bg-danger btn-sm text-light">Delete</button>
                                         </form>
                                     </td>
                                 </tr>

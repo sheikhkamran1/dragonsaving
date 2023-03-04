@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Menu;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Support\Str;
 
 
 class MenuController extends Controller
@@ -32,15 +33,17 @@ class MenuController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request->all());
         $request->validate([
             'name' => 'required',
-            'position' => 'required',
+            'menu_order' => 'required',
         ]);
 
         $menu = new Menu();
         $menu->name = $request->name;
+        $menu->slug = Str::slug($request->name);
+        $menu->menu_order = $request->menu_order;
         $menu->url = $request->url;
-        $menu->position = $request->position;
         $menu->save();
         toast('Record Saved Successfully!','success')->timerProgressBar();
         return redirect()->route('menu.index');
@@ -70,13 +73,14 @@ class MenuController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'position' => 'required',
+            'menu_order' => 'required',
         ]);
 
         $menu = Menu::find($id);
         $menu->name = $request->name;
         $menu->url = $request->url;
-        $menu->position = $request->position;
+        $menu->slug = Str::slug($request->name);
+        $menu->menu_order = $request->menu_order;
         $menu->update();
         toast('Record Saved Successfully!','success')->timerProgressBar();
         return redirect()->route('menu.index');

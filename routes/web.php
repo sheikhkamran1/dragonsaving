@@ -1,7 +1,18 @@
 <?php
 
+use App\Http\Controllers\Admin\AboutController;
+use App\Http\Controllers\Admin\CarouselController;
+use App\Http\Controllers\Admin\DownloadController;
+use App\Http\Controllers\Admin\EventController;
+use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\MenuController;
-use App\Http\Controllers\Admin\PageController;
+use App\Http\Controllers\Admin\MessageController;
+use App\Http\Controllers\Admin\NoticeController as AdminNoticeController;
+use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\Admin\ProfileController as AdminProfileController;
+use App\Http\Controllers\Admin\SchemeController;
+use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Frontend\PageController as FrontendPageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,9 +27,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FrontendPageController::class,'home']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -31,5 +40,15 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('/menu',MenuController::class);
-Route::resource('/page',PageController::class);
+Route::resource('/post',PostController::class);
+Route::resource('/message',MessageController::class);
+Route::resource('/scheme',SchemeController::class);
+Route::resource('/gallery',GalleryController::class);
+Route::resource('/event',EventController::class);
+Route::resource('/service',ServiceController::class);
+Route::resource('/carousel',CarouselController::class);
+Route::resource('/about',AboutController::class);
+Route::resource('/profile',AdminProfileController::class);
+Route::resource('/download',DownloadController::class);
+Route::resource('/notice',AdminNoticeController::class);
 require __DIR__.'/auth.php';
