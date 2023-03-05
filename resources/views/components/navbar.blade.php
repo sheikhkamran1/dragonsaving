@@ -8,7 +8,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
                 @foreach ($menus as $menu)
                     <li class="nav-item dropdown">
-                        @if (count($menu->pages) > 0)
+                        @if (count($menu->posts) > 0)
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 {{ $menu->name }}
