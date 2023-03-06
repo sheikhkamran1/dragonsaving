@@ -12,12 +12,14 @@
   <link rel="stylesheet" href="/assets/css/app.min.css">
   <link href="/assets/bundles/lightgallery/dist/css/lightgallery.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/bundles/summernote/summernote-bs4.css">
+  <link rel="stylesheet" href="/assets/bundles/datatables/datatables.min.css">
+  <link rel="stylesheet" href="/assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="/assets/css/custom.css">
-  <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+  <link rel='shortcut icon' type='image/x-icon' href='/assets/img/favicon.ico' />
   <!-- cdnjs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- bootstrap 5 css -->
@@ -205,9 +207,13 @@
   <!-- JS Libraies -->
   <script src="/assets/bundles/lightgallery/dist/js/lightgallery-all.js"></script>
   <script src="/assets/bundles/apexcharts/apexcharts.min.js"></script>
+  <script src="/assets/bundles/datatables/datatables.min.js"></script>
+  <script src="/assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  <script src="/assets/bundles/jquery-ui/jquery-ui.min.js"></script>
   <!-- Page Specific JS File -->
   <script src="/assets/js/page/light-gallery.js"></script>
   <script src="/assets/js/page/index.js"></script>
+  <script src="/assets/js/page/datatables.js"></script>
   <!-- Template JS File -->
   <script src="/assets/js/scripts.js"></script>
   <!-- Custom JS File -->

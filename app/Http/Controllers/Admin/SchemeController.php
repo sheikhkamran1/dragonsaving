@@ -8,7 +8,6 @@ use App\Models\Scheme;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-
 class SchemeController extends Controller
 {
     /**
@@ -16,8 +15,9 @@ class SchemeController extends Controller
      */
     public function index()
     {
+        $menu = Menu::all();
         $scheme = Scheme::all();
-        return view('admin.scheme.index',compact('scheme'));
+        return view('admin.scheme.index',compact('scheme','menu'));
     }
 
     /**

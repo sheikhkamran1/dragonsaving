@@ -25,9 +25,9 @@
 
                             @if (!empty($profile))
                             <tr>
-                                <td><img src=" {{ asset($profile->logo) }} " width="32" alt=""></td>
+                                <td><img src=" {{ asset($profile->logo) }} " width="50" alt=""></td>
                                 <td> {{ $profile->name }} </td>
-                                <td> {{ $profile->address }} </td>
+                                <td> {{ $profile->city }}/{{ $profile->street }} </td>
                                 <td> {{ $profile->contact_1 }}/{{ $profile->contact_2 }} </td>
                                 <td> {{ $profile->email }} </td>
                                 <td> {{ $profile->reg_no }} </td>

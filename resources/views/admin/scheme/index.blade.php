@@ -19,11 +19,11 @@
 
                         @foreach ($scheme as $item)
                             <tr>
-                                <td>{{ $item->id }}</td>
-                                <td>{{ $item->title }}</td>
-                                <td>{{ $item->slug }}</td>
-                                <td>{{ $item->menu->name }}</td>
-                                <td>
+                                <td class="border border-1">{{ $item->id }}</td>
+                                <td class="border border-1">{{ $item->name }}</td>
+                                <td class="border border-1">{{ $item->slug }}</td>
+                                <td class="border border-1">{{ $item->menu_id }}</td>
+                                <td class="border border-1">
                                     <form action="{{ route('scheme.destroy', $item->id) }}" method="post">
                                         @csrf
                                         @method('delete')

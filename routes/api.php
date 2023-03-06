@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\api\ApiController;
+use App\Http\Controllers\api\ContactController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +19,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('profile',[ApiController::class,'getProfile']);
+Route::get('gallery',[ApiController::class,'getGallery']);
+Route::get('event',[ApiController::class,'getEvent']);
+Route::get('offers',[ApiController::class,'getOffers']);
+Route::get('notice',[ApiController::class,'getNotice']);
+Route::get('carousel',[ApiController::class,'getCarousel']);
+Route::get('download',[ApiController::class,'getDownload']);
+Route::post('contact',ContactController::class);

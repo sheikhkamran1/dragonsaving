@@ -17,10 +17,11 @@
                                             alt="{{ $item->title }}">
                                         <h6 class="mt-4">{{ $item->title }}</h6>
                                         <form action="{{ route('carousel.destroy', $item->id) }}" method="post">
-                                            <a href="{{ route('carousel.edit', $item->id) }}"
-                                                class="btn btn-primary">Edit</a>
+
                                             @csrf
                                             @method('delete')
+                                            <a href="{{ route('carousel.edit', $item->id) }}"
+                                                class="btn btn-primary">Edit</a>
                                             <button type="submit" class="btn btn-danger">Delete</button>
                                         </form>
                                     </div>
