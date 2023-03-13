@@ -10,6 +10,8 @@ use App\Http\Resources\GalleryResource;
 use App\Http\Resources\NoticeResource;
 use App\Http\Resources\OffersResource;
 use App\Http\Resources\ProfileResource;
+use App\Http\Resources\resource\AboutResource;
+use App\Models\About;
 use App\Models\Carousel;
 use App\Models\Download;
 use App\Models\Event;
@@ -24,6 +26,11 @@ class ApiController extends Controller
     public function getProfile(){
         $profile = Profile::first();
         return new ProfileResource($profile);
+    }
+
+    public function getAbout(){
+        $about = About::first();
+        return new AboutResource($about);
     }
 
     public function getGallery(){

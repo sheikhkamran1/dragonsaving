@@ -89,7 +89,7 @@ class ProfileController extends Controller
         $profile->contact_1 = $request->contact_1;
         $profile->contact_2 = $request->contact_2;
         $profile->email = $request->email;
-        uploadImage($request, $profile, 'image');
+        uploadImage($request, $profile, 'logo');
         uploadImage($request, $profile, 'aniversary_image');
         $profile->update();
         toast('Record Saved Successfully!', 'success')->timerProgressBar();

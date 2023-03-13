@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Resources;
+namespace App\Http\Resources\resource;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class CarouselResource extends JsonResource
+class AboutResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -18,6 +18,7 @@ class CarouselResource extends JsonResource
         return[
             "id" => $this->id,
             "title" => $this->title,
+            "description" => $this->description,
             "image" => asset($this->image),
         ];
     }
