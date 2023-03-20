@@ -21,9 +21,9 @@
                             <tr>
                                 <td class="border border-1">{{ $item->id }}</td>
                                 <td class="border border-1">{{ $item->title }}</td>
-                                <td class="border border-1">{{ $item->scheme->title }}</td>
-                                <td class="border border-1"><a href="{{ route('service.show', $item->id) }}"><i
-                                            class="fa fa-eye" aria-hidden="true"></i></a></td>
+                                <td class="border border-1">{{ $item->scheme->name }}</td>
+                                {{-- <td class="border border-1"><a href="{{ route('service.show', $item->id) }}"><i
+                                            class="fa fa-eye" aria-hidden="true"></i></a></td> --}}
                                 <td class="border border-1">
                                     <form action="{{ route('service.destroy', $item->id) }}" method="post">
                                         @csrf

@@ -8,11 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Scheme extends Model
 {
     use HasFactory;
-    public function menu(){
-        return $this->belongsTo(Menu::class);
-    }
 
-    public function service(){
+    public function services(){
         return $this->hasMany(Service::class);
     }
 }

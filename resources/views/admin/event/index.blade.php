@@ -32,7 +32,7 @@
 
                                         <a href="{{ route('event.edit', $item->id) }}"
                                             class="badge badge-primary">Edit</a>
-                                            <a href="{{ route('service.show', $item->id) }}" class="badge badge-success">Preview</a>
+                                            <a href="{{ route('event.show', $item->id) }}" class="badge badge-success">Preview</a>
                                         <button type="submit" class="badge badge-danger text-light">Delete</button>
                                     </form>
                                 </td>

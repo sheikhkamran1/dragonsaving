@@ -14,8 +14,8 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="title">Title <span class="text-danger">*</span></label>
-                                    <input id="title" class="form-control" type="text" name="title" value="{{ old('title') }}">
+                                    <label for="name">Title <span class="text-danger">*</span></label>
+                                    <input id="name" class="form-control" type="text" name="name" value="{{ old('title') }}">
                                 </div>
                             </div>
 

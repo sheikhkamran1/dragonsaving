@@ -69,6 +69,7 @@ class PostController extends Controller
     {
         $post = Post::find($id);
         $menu = Menu::all();
+        //  return $menu;
         return view('admin.post.edit',compact('post','menu'));
     }
 

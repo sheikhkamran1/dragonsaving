@@ -15,9 +15,9 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="title">Title <span class="text-danger">*</span></label>
-                                    <input id="title" class="form-control" type="text" name="title"
-                                        value="{{ $gallery->title }}">
+                                    <label for="name">Title <span class="text-danger">*</span></label>
+                                    <input id="name" class="form-control" type="text" name="name"
+                                        value="{{ $gallery->name }}">
                                 </div>
                             </div>
 

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug');
-            $table->string('menu_order')->default(1);
+            $table->integer('menu_order')->default(1);
             $table->string('url')->nullable();
             $table->timestamps();
         });

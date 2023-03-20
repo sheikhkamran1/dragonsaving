@@ -42,7 +42,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="url">Url <span class="text-danger">(Optional)</span></label>
-                                    <input id="url" class="form-control" type="url" name="url"
+                                    <input id="url" class="form-control" type="text" name="url"
                                         value="{{ $menu->url }}">
                                 </div>
                             </div>

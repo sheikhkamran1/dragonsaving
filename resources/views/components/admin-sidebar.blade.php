@@ -32,6 +32,7 @@
         <li><a class="nav-link" href="{{ route('event.index') }}"><i data-feather="briefcase"></i> Event</a></li>
         <li><a class="nav-link" href="{{ route('download.index') }}"><i class="fa fa-download" aria-hidden="true"></i> Download</a></li>
         <li><a class="nav-link" href="{{ route('notice.index') }}"><i class="fa fa-comments" aria-hidden="true"></i> Notice</a></li>
+        <li><a class="nav-link" href="{{ route('offers.index') }}"><i class="fa fa-comments" aria-hidden="true"></i> Offers</a></li>
         <li><a class="nav-link" href="{{ route('message.index') }}"><i class="fa fa-envelope" aria-hidden="true"></i> Message</a></li>
 
 

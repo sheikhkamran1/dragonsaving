@@ -13,7 +13,5 @@ class Menu extends Model
         return $this->hasMany(Post::class);
     }
 
-    public function schemes(){
-        return $this->hasMany(Scheme::class);
-    }
+
 }

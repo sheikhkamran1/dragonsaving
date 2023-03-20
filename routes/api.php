@@ -22,12 +22,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('profile',[ApiController::class,'getProfile']);
+Route::get('menus',[ApiController::class,'getMenus']);
+Route::get('schemes',[ApiController::class,'getSchemes']);
 Route::get('about',[ApiController::class,'getAbout']);
+Route::get('message',[ApiController::class,'getMessage']);
 Route::get('gallery',[ApiController::class,'getGallery']);
 Route::get('event',[ApiController::class,'getEvent']);
-Route::get('offers',[ApiController::class,'getOffers']);
 Route::get('notice',[ApiController::class,'getNotice']);
 Route::get('carousel',[ApiController::class,'getCarousel']);
+Route::get('offers',[ApiController::class,'getOffers']);
 Route::get('download',[ApiController::class,'getDownload']);
 Route::apiResource('contact',ContactController::class);
 

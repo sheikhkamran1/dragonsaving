@@ -25,6 +25,8 @@
                                         </form>
                                     </div>
                                 </div>
+                                {{-- <a href="{{ asset($item->image) }}" download="{{ asset($item->image) }}"></a> --}}
+                                {{-- <a href="window.print()"></a> --}}
                             </div>
                         @endforeach
                     </div>

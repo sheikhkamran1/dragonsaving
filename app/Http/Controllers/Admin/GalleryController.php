@@ -31,7 +31,7 @@ class GalleryController extends Controller
     public function store(Request $request)
     {
         $gallery = new Gallery();
-        $gallery->title = $request->title;
+        $gallery->name = $request->name;
         $gallery->url = $request->url;
         uploadImage($request,$gallery,'featured_image');
         $gallery->save();
@@ -65,7 +65,6 @@ class GalleryController extends Controller
         $gallery->name = $request->name;
         $gallery->url = $request->url;
         uploadImage($request,$gallery,'featured_image');
-        uploadImage($request,$gallery,'url_image');
         $gallery->update();
         toast('Record Saved Successfully!', 'success')->timerProgressBar();
         return redirect()->route('gallery.index');

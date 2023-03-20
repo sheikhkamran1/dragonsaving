@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug');
             $table->longText('content');
-            $table->foreignId('menu_id');
+            $table->foreignId('menu_id')->constrained();
             $table->longText('meta_word')->nullable();
             $table->longText('meta_description')->nullable();
             $table->timestamps();
